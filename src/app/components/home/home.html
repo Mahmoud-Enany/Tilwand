@@ -1,0 +1,64 @@
+<main>
+  <div class="pb-6 border border-gray-200" >
+
+      <div id="controls-carousel" class=" bg-white relative w-full" data-carousel="static">
+
+      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="/slide1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                  <img src="/slide2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="/slide3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="/slide4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+      </div>
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                  </svg>
+                  <span class="sr-only">Previous</span>
+            </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                  </svg>
+                  <span class="sr-only">Next</span>
+            </span>
+      </button>
+      </div>
+
+      <div class="pt-8 pb-16">
+          <div class="text-center pb-12">
+            <h1 class="text-5xl py-3 ">Tools</h1>
+            <p>Lorem ipsum dolor sit amet consectetur!</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-y-3    text-black">
+                  @for (item of items; track $index) {
+                        <div class="p-6 border bg-white relative rounded-md shadow-md flex flex-col items-center text-center">
+                        <div class="absolute -top-4 flex items-center justify-center w-8 h-8 bg-red-200 rounded-full shadow-md">
+                              <i class="fa-solid fa-wrench text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl">Product</h3>
+                        <span class="h-0.5 w-10 bg-black my-2"></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                  }
+            </div>  
+      </div>
+</div>
+
+</main>

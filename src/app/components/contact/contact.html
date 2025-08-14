@@ -1,0 +1,53 @@
+<section class="pb-6 text-center">
+  <h1 class="text-4xl font-bold p-8">Contact Us</h1>
+  <p class="pb-10 dark:text-gray-400">
+    We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.
+  </p>
+
+  <div class="w-[90%]   sm:w-2/3 lg:w-1/2 mx-auto bg-white p-6 rounded-md shadow-xl">
+    <form class="mt-4 text-left dark:text-black">
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+        <input
+          type="text"
+          id="name"
+          class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm 
+                 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+          placeholder="Enter your name"
+        />
+      </div>
+
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm 
+                 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+          placeholder="Enter your email"
+        />
+      </div>
+
+      <div class="mb-4">
+        <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+        <textarea
+          id="message"
+          rows="4"
+          class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm 
+                 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+          placeholder="Type your message here..."
+        ></textarea>
+      </div>
+
+      <div class="flex justify-center">
+        <button (click)="onSubmit($event)"
+          type="submit"
+          class="w-full sm:w-auto px-6 py-2 bg-green-600 text-white rounded-md shadow-md hover:bg-green-700 
+                 transition-colors duration-200 cursor-pointer"
+        >
+          Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

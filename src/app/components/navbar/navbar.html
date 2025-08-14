@@ -1,0 +1,43 @@
+<nav
+  class="flex items-center justify-between px-6 py-6 shadow-md bg-white transition-colors duration-300"
+>
+  <div class="flex items-center ">
+    <img  src="/navImage.png" alt="Logo" class="h-7 cursor-pointer" />
+  </div>
+
+  <ul class="flex items-center space-x-4">
+    <li>
+      <a
+        routerLink="/home"
+        class="font-medium text-gray-700 hover:text-blue-600 px-1 py-2 border-b-2 border-transparent hover:border-blue-600 transition-colors duration-200 dark:hover:!text-green-500 dark:hover:border-green-500"
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/about"
+        routerLinkActive="text-blue-600 border-blue-600"
+        class="font-medium text-gray-700 hover:text-blue-600 px-1 py-2 border-b-2 border-transparent hover:border-blue-600 transition-colors duration-200 dark:hover:!text-green-500 dark:hover:border-green-500"
+      >
+        About
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/contact"
+        routerLinkActive="text-blue-600"
+        class="font-medium text-gray-700 hover:text-blue-600 px-1 py-2 border-b-2 border-transparent hover:border-blue-600 transition-colors duration-200 dark:hover:!text-green-500 dark:hover:border-green-500"
+      >
+        Contact
+      </a>
+    </li>
+  </ul>
+
+  <button
+    (click)="toggleMode()"
+    class="px-4 py-2 rounded-md bg-gray-200 cursor-pointer hover:bg-gray-300 text-gray-800 dark:bg-black dark:text-white font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-black"
+  >
+    {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
+  </button>
+</nav>
